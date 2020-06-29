@@ -17,7 +17,8 @@ connection_string = sitl.connection_string()
 #--- Now that we have started the SITL and we have the connection string (basically the ip and udp port)...
 
 print(">>>> Connecting with the UAV <<<")
-vehicle = connect(connection_string, wait_ready=True)     #- wait_ready flag hold the program untill all the parameters are been read (=, not .)
+vehicle = connect('udp:127.0.0.1:14551')
+#vehicle = connect(connection_string, wait_ready=True)     #- wait_ready flag hold the program untill all the parameters are been read (=, not .)
 
 #-- Read information from the autopilot:
 #- Version and attributes
