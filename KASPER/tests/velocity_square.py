@@ -411,7 +411,7 @@ DOWN = 0.5
 print("SQUARE path using SET_POSITION_TARGET_LOCAL_NED and velocity parameters")
 
 print("Yaw 180 absolute (South)")
-condition_yaw(180)
+#condition_yaw(180)
 
 print("Velocity South & up")
 send_ned_velocity(SOUTH,0,UP,DURATION)
@@ -419,7 +419,7 @@ send_ned_velocity(0,0,0,1)
 
 
 print("Yaw 270 absolute (West)")
-condition_yaw(270)
+#condition_yaw(270)
 
 print("Velocity West & down")
 send_ned_velocity(0,WEST,DOWN,DURATION)
@@ -427,7 +427,7 @@ send_ned_velocity(0,0,0,1)
 
 
 print("Yaw 0 absolute (North)")
-condition_yaw(0)
+#condition_yaw(0)
 
 print("Velocity North")
 send_ned_velocity(NORTH,0,0,DURATION)
@@ -435,7 +435,7 @@ send_ned_velocity(0,0,0,1)
 
 
 print("Yaw 90 absolute (East)")
-condition_yaw(90)
+#condition_yaw(90)
 
 print("Velocity East")
 send_ned_velocity(0,EAST,0,DURATION)
